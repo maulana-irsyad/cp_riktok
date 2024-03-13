@@ -214,8 +214,9 @@ ul {
   font-size: 1rem;
   color: var(--white);
   padding: 0 0rem 0 0rem;
-  background-color: #5e504a;
+  background-color: rgb(77, 66, 61);
   background-image: url('img/image\ 14.svg');
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-size: 1000px;
   background-repeat: inherit;
   /* padding: 2rem 0 2rem 0; */
