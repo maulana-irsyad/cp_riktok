@@ -213,13 +213,16 @@ ul {
   align-items: center;
   font-size: 1rem;
   color: var(--white);
-  /* padding: 0 2rem 0 2rem; */
+  padding: 0 0rem 0 0rem;
   background-color: #5e504a;
   background-image: url('img/image\ 14.svg');
   background-size: 1000px;
   background-repeat: inherit;
-  padding: 2rem 0 2rem 0;
+  /* padding: 2rem 0 2rem 0; */
   
+}
+.col-md-6{
+  padding: 0px 0px 0px 0px!important;
 }
 .workshop-details img{
   width: -webkit-fill-available;
@@ -230,7 +233,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding:0 2rem 0 2rem;
+  padding:0 5rem 0 5rem;
 }
 .carousel-item img {
   height: 300px; 
