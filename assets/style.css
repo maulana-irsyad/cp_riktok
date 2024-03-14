@@ -57,6 +57,12 @@ span {
 .px48{
   font-size: 48px;
 }
+.px40{
+  font-size: 40px;
+}
+.px12{
+  font-size: 12px;
+}
 .italic {
   font-style: italic;
 }
@@ -246,6 +252,20 @@ ul {
 
 .workshop-details span{
   color: var(--secondary-color);
+}
+
+/* COREVALUES */
+.corevalues{
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: 30vh 0 30vh 0;
+
+}
+.corevalues span{
+  color: var(--secondary-color)
+}
+.corevalues i{
+  padding: 2rem 0 2rem 0;
 }
 
 /* FOOTER  */
