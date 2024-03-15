@@ -18,7 +18,7 @@ body {
 
 /* font  */
 .belltm-bold {
-  /* color: var(--white); */
+  color: var(--primary-color);
   font-family: "Bell MT", serif;
   font-weight: bold; /* Mengatur ketebalan font menjadi bold */
   /* text-align: center; */
@@ -31,7 +31,7 @@ body {
   /* font-size: 96px; */
 }
 span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .poppins-bold {
   font-family: "Poppins", sans-serif; /* Mengatur jenis font menjadi Poppins */
@@ -70,10 +70,13 @@ ul {
   list-style: none;
 }
 .bg-brown {
-  background-color: #5e504a;
+  background-color: var(--primary-color);
 }
 .gold {
   color: #ffd567;
+}
+button{
+  border-radius: 10px; 
 }
 /* HEADER */
 .header-section {
@@ -209,6 +212,55 @@ ul {
   .header-carousel .header-wrapper h1 {
     font-size: 4rem;
   }
+}
+/* about-section */
+.aboutus{
+  color: var(--primary-color);
+}
+.buttons{
+  border-radius: 2rem;
+  width: 20rem;
+  padding: 1rem 0rem;
+}
+.aboutus span{
+  color: var(--secondary-color);
+}
+.images-list{
+  display: flex;
+    flex-direction: column;
+}
+.aboutus img{
+  height: 300px;
+  border-radius: 2cap;
+  margin: 1rem 5rem;
+}
+/* WORKSHOP CLICKBAIT */
+.workshop-clickbait{
+  color: var(--primary-color);
+}
+.buttons{
+  border-radius: 2rem;
+  width: 20rem;
+  padding: 1rem 0rem;
+}
+.workshop-clickbait span{
+  color: var(--secondary-color);
+}
+.images-list{
+  display: flex;
+    flex-direction: column;
+}
+.workshop-clickbait img{
+  height: 300px;
+}
+
+/* PRODUCT */
+.product{
+  margin: 2rem 0;
+  padding: 5rem 0;
+  background-color: rgb(101, 86, 80);
+  background-image: url("img/image\ 14.svg");
+  background-size: 1000px;
 }
 
 /* MAPS / QUOTES */
