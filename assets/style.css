@@ -18,7 +18,7 @@ body {
 
 /* font  */
 .belltm-bold {
-  /* color: var(--white); */
+  color: var(--primary-color);
   font-family: "Bell MT", serif;
   font-weight: bold; /* Mengatur ketebalan font menjadi bold */
   /* text-align: center; */
@@ -31,7 +31,7 @@ body {
   /* font-size: 96px; */
 }
 span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .poppins-bold {
   font-family: "Poppins", sans-serif; /* Mengatur jenis font menjadi Poppins */
@@ -70,10 +70,13 @@ ul {
   list-style: none;
 }
 .bg-brown {
-  background-color: #5e504a;
+  background-color: var(--primary-color);
 }
 .gold {
   color: #ffd567;
+}
+button{
+  border-radius: 10px; 
 }
 /* HEADER */
 .header-section {
@@ -210,7 +213,203 @@ ul {
   .header-carousel .header-wrapper h1 {
     font-size: 4rem;
   }
+  h2{
+    font-size: 3rem!important;
+  }
+  h3{
+    font-size: 2rem!important;
+  }
+  p{
+    font-size: 1rem!important;
+  }
 }
+/* about-section */
+.aboutus{
+  color: var(--primary-color);
+}
+.buttons{
+  border-radius: 2rem;
+  width: 20rem;
+  padding: 1rem 0rem;
+}
+.aboutus span{
+  color: var(--secondary-color);
+}
+.images-list{
+  display: flex;
+    flex-direction: column;
+}
+.aboutus img{
+  height: 300px;
+  border-radius: 2cap;
+  margin: 1rem 5rem;
+}
+/* CSS untuk membuat teks disembunyikan */
+/* CSS untuk membuat teks disembunyikan dengan tanda elipsis */
+#dots{
+  display: none;
+}
+#more {
+  display: none;
+}
+
+/* CSS untuk tautan "Read More" */
+#readMoreButton {
+  display: block;
+  margin-top: 10px; /* Atur jarak dari teks */
+}
+
+
+/* WORKSHOP CLICKBAIT */
+.workshop-clickbait{
+  padding: 5rem 0;
+  color: var(--primary-color);
+}
+.buttons{
+  border-radius: 2rem;
+  width: 20rem;
+  padding: 1rem 0rem;
+}
+.workshop-clickbait span{
+  color: var(--secondary-color);
+}
+.images-list{
+  display: flex;
+    flex-direction: column;
+}
+.workshop-clickbait img{
+  max-width: 500px;
+}
+@media (max-width:765px) {
+  .workshop-clickbait img{
+    margin:5rem 0 0 0;
+  }
+}
+
+/* PRODUCT */
+/* Slider styles */
+
+.slider-container {
+  padding: 10px 20rem;
+  max-height: 100vh;
+}
+.verticalslider-container{
+  padding: 10px 0rem;
+  max-height: 100vh;
+}
+@media(max-width:768px){
+  .slider-container{
+    padding: 10px 0;
+  }
+}
+
+.slides-wrapper {
+  margin: auto;
+  overflow: hidden;
+}
+.verticalslides-wrapper{
+  margin: auto;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.slides-container {
+  padding: 0 10px;
+}
+.verticalslides-container{
+  padding: 0 10px;
+}
+
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+  max-height: calc(100vh - 80px);
+  /* width: calc(100% -50%); */
+}
+.verticalslider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  overflow: hidden; */
+  transition: 1s;
+  max-width: calc(100vh - 80px);
+  overflow: hidden;
+  /* width: calc(100% -50%); */
+}
+
+.slider-item {
+  /* background-color: #bdbdbd; */
+  margin: 0 1rem 0 1rem;
+  /* min-height: 150px; */
+  /* width: 50%; */
+  
+}
+.verticalslider-item{
+  margin: 0 1rem 0 1rem;
+  height: auto;
+}
+
+.slider-item img {
+  /* width: 50%; */
+}
+
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  /* height: 30px; */
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.verticalslider-arrows {
+  
+  text-align: center;
+
+}
+
+.slider-arrow-prev,
+.slider-arrow-next {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 24px;
+  border-radius: 2rem;
+  cursor: pointer;
+  
+}
+.verticalslider-arrow-prev,
+.verticalslider-arrow-next {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 24px;
+  border-radius: 2rem;
+  cursor: pointer;
+  
+}
+
+.slider-arrow-prev:hover,
+.slider-arrow-next:hover,
+.verticalslider-arrow-next:hover,
+.verticalslider-arrow-prev:hover {
+  background-color: #eeeeee;
+}
+.product{
+  margin: 2rem 0;
+  padding: 5rem 0;
+  background-color: rgb(101, 86, 80);
+  background-image: url("img/image\ 14.svg");
+  background-size: 1000px;
+}
+
+
 
 /* MAPS / QUOTES */
 .maps {
@@ -315,9 +514,9 @@ ul {
 
 /* COREVALUES */
 .corevalues {
-  background-color: var(--white);
-  color: var(--primary-color);
-  padding: 30vh 0;
+  background-color: #8EA170;
+  color: var(--white);
+  padding: 5rem 0;
 }
 
 .corevalues .row .col-12 {
