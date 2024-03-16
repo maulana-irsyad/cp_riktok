@@ -212,6 +212,15 @@ button{
   .header-carousel .header-wrapper h1 {
     font-size: 4rem;
   }
+  h2{
+    font-size: 3rem!important;
+  }
+  h3{
+    font-size: 2rem!important;
+  }
+  p{
+    font-size: 1rem!important;
+  }
 }
 /* about-section */
 .aboutus{
@@ -236,6 +245,7 @@ button{
 }
 /* WORKSHOP CLICKBAIT */
 .workshop-clickbait{
+  padding: 5rem 0;
   color: var(--primary-color);
 }
 .buttons{
@@ -251,7 +261,12 @@ button{
     flex-direction: column;
 }
 .workshop-clickbait img{
-  height: 300px;
+  max-width: 500px;
+}
+@media (max-width:765px) {
+  .workshop-clickbait img{
+    margin:5rem 0 0 0;
+  }
 }
 
 /* PRODUCT */
@@ -262,6 +277,24 @@ button{
   background-image: url("img/image\ 14.svg");
   background-size: 1000px;
 }
+/* CSS untuk perangkat mobile */
+/* CSS untuk mengatur jumlah kolom pada tampilan mobile */
+@media only screen and (max-width: 767px) {
+  .carousel-inner .carousel-item .container .row .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 608px) {
+  .card {
+    margin: 2rem 0; /* Ubah nilai sesuai kebutuhan */
+  }
+}
+.card{
+  min-width: 300px;
+}
+
 
 /* MAPS / QUOTES */
 .maps {
@@ -366,9 +399,9 @@ button{
 
 /* COREVALUES */
 .corevalues {
-  background-color: var(--white);
-  color: var(--primary-color);
-  padding: 30vh 0;
+  background-color: #8EA170;
+  color: var(--white);
+  padding: 5rem 0;
 }
 .corevalues span {
   color: var(--secondary-color);
