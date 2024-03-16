@@ -12,9 +12,9 @@
         this.verticalsliderPrev = this.verticalslider.querySelector('.verticalslider-arrow-prev');
   
         // Get media queries
-        this.mediaQueryList = [window.matchMedia(`screen and (max-width:${mediaQueries[0] - 1}px)`)];
+        this.mediaQueryList = [window.matchMedia(`screen and (max-height:${mediaQueries[0] - 1}px)`)];
         mediaQueries.forEach((mediaQuery) => {
-          this.mediaQueryList.push(window.matchMedia(`screen and (min-width:${mediaQuery}px)`));
+          this.mediaQueryList.push(window.matchMedia(`screen and (min-height:${mediaQuery}px)`));
         });
   
         // Define global variables
@@ -78,11 +78,11 @@
             this.verticalsliderList.style.transform = 'translateY(0%)';
   
             // Set verticalslider list width
-            this.verticalsliderList.style.height = `calc(${(50 / this.numberOfVisibleItems) * this.verticalsliderItemsLength}% + ${(this.verticalsliderItemsLength / this.numberOfVisibleItems) * 16}px)`;
+            this.verticalsliderList.style.height = `calc(${(100 / this.numberOfVisibleItems) * this.verticalsliderItemsLength}% + ${(this.verticalsliderItemsLength / this.numberOfVisibleItems) * 16}px)`;
   
             // Set slides width
             this.verticalsliderItems.forEach((item) => {
-              item.style.height = `${'200px' / this.numberOfVisibleItems}%`;
+              item.style.height = `${100 / this.numberOfVisibleItems}%`;
             });
   
             // Exit the loop
@@ -105,9 +105,9 @@
     */
   
     // Create a new verticalslider and run it
-    new Verticalslider('new-products', [576, 992]).run();
+    new Verticalslider('new-gambar', [576, 992]).run();
   
     // Create a new verticalslider and run it
-    new Verticalslider('featured-products', [576, 768, 992]).run();
+    new Verticalslider('featured-gambar', [576, 768, 992]).run();
   })();
   

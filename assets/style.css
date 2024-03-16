@@ -292,6 +292,10 @@ button{
   padding: 10px 20rem;
   max-height: 100vh;
 }
+.verticalslider-container{
+  padding: 10px 0rem;
+  max-height: 100vh;
+}
 @media(max-width:768px){
   .slider-container{
     padding: 10px 0;
@@ -305,11 +309,14 @@ button{
 .verticalslides-wrapper{
   margin: auto;
   overflow: hidden;
+  height: 80vh;
 }
 
 .slides-container {
   padding: 0 10px;
-  
+}
+.verticalslides-container{
+  padding: 0 10px;
 }
 
 .slider-list {
@@ -326,11 +333,12 @@ button{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden; */
   transition: 1s;
   max-width: calc(100vh - 80px);
+  overflow: hidden;
   /* width: calc(100% -50%); */
 }
 
@@ -340,6 +348,10 @@ button{
   /* min-height: 150px; */
   /* width: 50%; */
   
+}
+.verticalslider-item{
+  margin: 0 1rem 0 1rem;
+  height: auto;
 }
 
 .slider-item img {
@@ -353,6 +365,11 @@ button{
   padding: 0 10px;
   margin-top: 10px;
 }
+.verticalslider-arrows {
+  
+  text-align: center;
+
+}
 
 .slider-arrow-prev,
 .slider-arrow-next {
@@ -365,9 +382,22 @@ button{
   cursor: pointer;
   
 }
+.verticalslider-arrow-prev,
+.verticalslider-arrow-next {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 24px;
+  border-radius: 2rem;
+  cursor: pointer;
+  
+}
 
 .slider-arrow-prev:hover,
-.slider-arrow-next:hover {
+.slider-arrow-next:hover,
+.verticalslider-arrow-next:hover,
+.verticalslider-arrow-prev:hover {
   background-color: #eeeeee;
 }
 .product{
@@ -377,23 +407,7 @@ button{
   background-image: url("img/image\ 14.svg");
   background-size: 1000px;
 }
-/* CSS untuk perangkat mobile */
-/* CSS untuk mengatur jumlah kolom pada tampilan mobile */
-@media only screen and (max-width: 767px) {
-  .carousel-inner .carousel-item .container .row .col-md-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 
-@media only screen and (max-width: 608px) {
-  .card {
-    margin: 2rem 0; /* Ubah nilai sesuai kebutuhan */
-  }
-}
-.card{
-  /* min-width: 300px; */
-}
 
 
 /* MAPS / QUOTES */
