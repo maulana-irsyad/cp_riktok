@@ -27,6 +27,8 @@
     />
     <!-- CSS Bootstrap -->
     <link href="assets/js/bootstrap.min.css" rel="stylesheet" >
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/sliderup.js" defer></script>
 
   </head>
   <body>
@@ -90,30 +92,49 @@
     </section>
     <section class="aboutus">
       <div class="container-fluid">
-        <div class="row flex-lg-row-reverse align-items-center">
-          <div class="col col-xl-6 align-items-center">
-            <div class="content">
-              <h2 class="belltm-bold px64 mb-3 lh-1">
-                <span>Rikrok</span> Seni Kriya
-              </h2>
-              <p class="poppins px24">
-                Kriya Kayu Rik Rok adalah brand lokal yang memproduksi kerajinan berbahan dasar limbah ramah lingkungan, dengan fokus utama pada pemanfaatan limbah dan pengembangan wisata edukasi. Nama "Rik Rok" terinspirasi dari suara kodok dan jangkrik yang merupakan simbol harmoni alami. Workshop kami berada di pinggiran sawah yang masih alami dan bebas polusi,suara kodok dan jangkrik bersaut sautan dengan yang lain. Tetapi tidak saling menjegal melainkan salin mengisi kekosongan sehingga menjadi suara yang merdu untuk didengar, sehingga bisa menjaga keharmonisan hidup yang berkelanjutan dan selalu menjaga kearifan local.
-              </p>
-              <button class="buttons bg-brown poppins-bold text-white">Lihat Selengkapnya</button>
-            </div>
+          <div class="row flex-lg-row-reverse align-items-center">
+              <div class="col col-xl-6 align-items-center">
+                  <div class="content">
+                      <h2 class="belltm-bold px64 mb-3 lh-1">
+                          <span>Rikrok</span> Seni Kriya
+                      </h2>
+                      <p class="poppins px24" id="mainContent">
+                          Kriya Kayu Rik Rok adalah brand lokal yang memproduksi kerajinan berbahan dasar limbah ramah lingkungan, dengan fokus utama pada pemanfaatan limbah dan pengembangan wisata edukasi.<span id="dots"> Nama "Rik Rok" terinspirasi dari suara kodok dan jangkrik yang merupakan simbol harmoni alami. Workshop kami berada di pinggiran sawah yang masih alami dan bebas polusi,suara kodok dan jangkrik bersaut sautan dengan yang lain. Tetapi tidak saling menjegal melainkan salin mengisi kekosongan sehingga menjadi suara yang merdu untuk didengar, sehingga bisa menjaga keharmonisan hidup yang berkelanjutan dan selalu menjaga kearifan local.</span>
+                          <span id="more" style="display: none;"></span></span>
+                      </p>
+                      <div class="mid poppins px24" id="HiddenDiv" style="display: none;">
+                        
+                      </div>
+                      <button class="buttons bg-brown poppins-bold text-white"onclick="myFunction()" id="myBtn">Lihat Selengkapnya</button>
+                  </div>
+              </div>
+              <div class="col col-xl-6 order-md-2 d-flex justify-content-center align-items-center p-0" id="new-gambar">
+                <div class="slider-arrows">
+                  <button type="button" class="verticalslider-arrow-prev">Sebelumnya</button>
+                  <button type="button" class="verticalslider-arrow-next">Selanjutnya</button>
+                </div>
+                  
+                  <div class="slides-wrapper">
+                    <div class="verticalslider-list">
+                      <div class="verticalslider-item">
+
+                        <img src="assets/img/DSCF0460.JPG" alt=""/>
+                      </div>
+                      <div class="verticalslider-item">
+
+                        <img src="assets/img/DSCF0460.JPG" alt=""/>
+                      </div>
+                      <div class="verticalslider-item">
+
+                        <img src="assets/img/DSCF0460.JPG" alt=""/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
           </div>
-          <div
-            class="col col-xl-6 order-md-2 d-flex justify-content-center align-items-center p-0"
-          >
-            <div class="images-list">
-              <img src="assets/img/DSCF0460.JPG" alt=""/>
-              <img src="assets/img/DSCF0460.JPG" alt=""/>
-              <img src="assets/img/DSCF0460.JPG" alt=""/>
-            </div>
-            
-          </div>
-        </div>
       </div>
+    
+    
     </section>
     <section class="corevalues">
       <div class="container">
@@ -204,155 +225,84 @@
         </div>
       </div>
     </section>
-    <section class="product">
-      <div>
-        <div class="container-fluid">
-          <div class="row flex-lg-row align-items-center">
-            <h2 class="belltm-bold px64 mb-3 lh-1 text-center text-white">Our Latest <span>Product</span></h2>
-            <!-- test  -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 1 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-barbie-batik-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pensil Barbie Batik</h5>
-                            <!-- <p class="card-text">Description of Product 1.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 2 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-barbie-brokat-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body text-center poppins-bold px24">
-                            <h5 class="card-title">Pensil Barbie Brokat</h5>
-                            <!-- <p class="card-text">Description of Product 2.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 3 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil_gaul_couple-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pensil Gaul Couple</h5>
-                            <!-- <p class="card-text">Description of Product 3.</p> -->
-                          </div>
-                        </div>
-                      </div>
+    
+    <section class="product" id="new-products">
+      <h2 class="belltm-bold px64 mb-3 lh-1 text-center text-white">Our Latest <span>Product</span></h2>
+      <div class="slider-container" >
+        <div class="slides-wrapper">
+          <div class="slides-container">
+            <!-- <div class="row"> -->
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-sarimbit-jawa-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Pensil Sarimbit Jawa</h5>
+                      <!-- <p class="card-text">Description of Product 1.</p> -->
                     </div>
                   </div>
-                </div>
-                <!-- Add more carousel items as needed -->
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 1 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-sarimbit-jawa-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pensil Sarimbit Jawa</h5>
-                            <!-- <p class="card-text">Description of Product 1.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 2 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-gaul-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pensil Gaul</h5>
-                            <!-- <p class="card-text">Description of Product 2.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 3 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-wayang-batik-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pensil Wayang Batik</h5>
-                            <!-- <p class="card-text">Description of Product 3.</p> -->
-                          </div>
-                        </div>
-                      </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-gaul-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Pensil Gaul</h5>
+                      <!-- <p class="card-text">Description of Product 2.</p> -->
                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 1 -->
-                        <div class="card">
-                          <img src="assets/img/product/pembatas-buku-natural-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Pembatas Buku Natural</h5>
-                            <!-- <p class="card-text">Description of Product 1.</p> -->
-                          </div>
-                        </div>
-                      </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-wayang-batik-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Pensil Wayang Batik</h5>
+                      <!-- <p class="card-text">Description of Product 3.</p> -->
                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 1 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-sarimbit-jawa-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Kluwak</h5>
-                            <!-- <p class="card-text">Description of Product 1.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 2 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-gaul-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Balet</h5>
-                            <!-- <p class="card-text">Description of Product 2.</p> -->
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12 col-lg-4">
-                        <!-- Card 3 -->
-                        <div class="card">
-                          <img src="assets/img/product/pensil-kayu-natural-removebg-preview.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Natural</h5>
-                            <!-- <p class="card-text">Description of Product 3.</p> -->
-                          </div>
-                        </div>
-                      </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pembatas-buku-natural-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Pembatas Buku Natural</h5>
+                      <!-- <p class="card-text">Description of Product 1.</p> -->
                     </div>
                   </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            
-            <!-- test  -->
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-sarimbit-jawa-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Kluwak</h5>
+                      <!-- <p class="card-text">Description of Product 1.</p> -->
+                    </div>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-gaul-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Balet</h5>
+                      <!-- <p class="card-text">Description of Product 2.</p> -->
+                    </div>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card align-items-center">
+                    <img src="assets/img/product/pensil-kayu-natural-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center poppins-bold px24">Gantungan Kunci Natural</h5>
+                      <!-- <p class="card-text">Description of Product 3.</p> -->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            <!-- </div>   -->
           </div>
+        </div>
+        <div class="slider-arrows">
+          <button type="button" class="slider-arrow-prev">Sebelumnya</button>
+          <button type="button" class="slider-arrow-next">Selanjutnya</button>
         </div>
       </div>
     </section>
@@ -427,6 +377,23 @@
     ></script>
     <!-- test  -->
     <!-- JavaScript Bootstrap -->
+    <script type="text/javascript">// <![CDATA[
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "inline") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Lihat Selengkapnya";
+          dots.style.display = "none";
+        } else {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Lihat Lebih Sedikit";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
     <script src="assets/js/jquery-3.7.1.min.js" ></script>
     <script src="assets/js/popper.min.js" ></script>
     <script src="assets/js/bootstrap.min.js" ></script>
