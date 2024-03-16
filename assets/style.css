@@ -75,8 +75,8 @@ ul {
 .gold {
   color: #ffd567;
 }
-button{
-  border-radius: 10px; 
+button {
+  border-radius: 10px;
 }
 /* HEADER */
 .header-section {
@@ -150,9 +150,8 @@ button{
 /* HEADER CONTENT */
 .header-carousel {
   display: flex;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -213,40 +212,40 @@ button{
   .header-carousel .header-wrapper h1 {
     font-size: 4rem;
   }
-  h2{
-    font-size: 3rem!important;
+  h2 {
+    font-size: 3rem;
   }
-  h3{
-    font-size: 2rem!important;
+  h3 {
+    font-size: 2rem;
   }
-  p{
-    font-size: 1rem!important;
+  p {
+    font-size: 1rem;
   }
 }
 /* about-section */
-.aboutus{
+.aboutus {
   color: var(--primary-color);
 }
-.buttons{
+.buttons {
   border-radius: 2rem;
   width: 20rem;
   padding: 1rem 0rem;
 }
-.aboutus span{
+.aboutus span {
   color: var(--secondary-color);
 }
-.images-list{
+.images-list {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
-.aboutus img{
+.aboutus img {
   height: 300px;
   border-radius: 2cap;
   margin: 1rem 5rem;
 }
 /* CSS untuk membuat teks disembunyikan */
 /* CSS untuk membuat teks disembunyikan dengan tanda elipsis */
-#dots{
+#dots {
   display: none;
 }
 #more {
@@ -259,30 +258,29 @@ button{
   margin-top: 10px; /* Atur jarak dari teks */
 }
 
-
 /* WORKSHOP CLICKBAIT */
-.workshop-clickbait{
+.workshop-clickbait {
   padding: 5rem 0;
   color: var(--primary-color);
 }
-.buttons{
+.buttons {
   border-radius: 2rem;
   width: 20rem;
   padding: 1rem 0rem;
 }
-.workshop-clickbait span{
+.workshop-clickbait span {
   color: var(--secondary-color);
 }
-.images-list{
+.images-list {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
-.workshop-clickbait img{
+.workshop-clickbait img {
   max-width: 500px;
 }
-@media (max-width:765px) {
-  .workshop-clickbait img{
-    margin:5rem 0 0 0;
+@media (max-width: 765px) {
+  .workshop-clickbait img {
+    margin: 5rem 0 0 0;
   }
 }
 
@@ -293,12 +291,12 @@ button{
   padding: 10px 20rem;
   max-height: 100vh;
 }
-.verticalslider-container{
+.verticalslider-container {
   padding: 10px 0rem;
   max-height: 100vh;
 }
-@media(max-width:768px){
-  .slider-container{
+@media (max-width: 768px) {
+  .slider-container {
     padding: 10px 0;
   }
 }
@@ -307,7 +305,7 @@ button{
   margin: auto;
   overflow: hidden;
 }
-.verticalslides-wrapper{
+.verticalslides-wrapper {
   margin: auto;
   overflow: hidden;
   height: 80vh;
@@ -316,7 +314,7 @@ button{
 .slides-container {
   padding: 0 10px;
 }
-.verticalslides-container{
+.verticalslides-container {
   padding: 0 10px;
 }
 
@@ -348,9 +346,8 @@ button{
   margin: 0 1rem 0 1rem;
   /* min-height: 150px; */
   /* width: 50%; */
-  
 }
-.verticalslider-item{
+.verticalslider-item {
   margin: 0 1rem 0 1rem;
   height: auto;
 }
@@ -367,9 +364,7 @@ button{
   margin-top: 10px;
 }
 .verticalslider-arrows {
-  
   text-align: center;
-
 }
 
 .slider-arrow-prev,
@@ -381,7 +376,6 @@ button{
   font-size: 24px;
   border-radius: 2rem;
   cursor: pointer;
-  
 }
 .verticalslider-arrow-prev,
 .verticalslider-arrow-next {
@@ -392,7 +386,6 @@ button{
   font-size: 24px;
   border-radius: 2rem;
   cursor: pointer;
-  
 }
 
 .slider-arrow-prev:hover,
@@ -401,15 +394,13 @@ button{
 .verticalslider-arrow-prev:hover {
   background-color: #eeeeee;
 }
-.product{
+.product {
   margin: 2rem 0;
   padding: 5rem 0;
   background-color: rgb(101, 86, 80);
   background-image: url("img/image\ 14.svg");
   background-size: 1000px;
 }
-
-
 
 /* MAPS / QUOTES */
 .maps {
@@ -439,6 +430,10 @@ button{
   color: var(--white);
   padding: 0;
   background-color: rgb(77, 66, 61);
+}
+
+.workshop-details h2:first-child {
+  color: var(--white);
 }
 
 .content {
@@ -514,9 +509,22 @@ button{
 
 /* COREVALUES */
 .corevalues {
-  background-color: #8EA170;
+  background-color: #8ea170;
   color: var(--white);
   padding: 5rem 0;
+}
+
+.corevalues h2 {
+  color: var(--white);
+}
+
+.workshop-details-page .corevalues {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.workshop-details-page .corevalues h2 {
+  color: var(--secondary-color);
 }
 
 .corevalues .row .col-12 {
@@ -526,6 +534,7 @@ button{
 .corevalues span {
   color: var(--secondary-color);
 }
+
 .corevalues i {
   padding: 2rem 0;
 }
