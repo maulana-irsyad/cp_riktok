@@ -147,6 +147,7 @@ ul {
 /* HEADER CONTENT */
 .header-carousel {
   display: flex;
+  background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
@@ -161,7 +162,7 @@ ul {
   position: absolute;
   min-height: 100%;
   min-width: 100%;
-  background-image: linear-gradient(180deg, #00000069, #000000b6);
+  background-image: linear-gradient(180deg, #00000069, #000000c5);
 }
 
 .header-carousel .header-wrapper {
@@ -200,7 +201,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .header-carousel .header-wrapper img {
     width: 25%;
     height: auto;
@@ -224,7 +225,7 @@ ul {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .maps p {
     font-size: 1.25rem;
   }
@@ -302,7 +303,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .content {
     padding: 0 1.5rem;
   }
@@ -318,11 +319,22 @@ ul {
   color: var(--primary-color);
   padding: 30vh 0;
 }
+
+.corevalues .row .col-12 {
+  width: 300px;
+}
+
 .corevalues span {
   color: var(--secondary-color);
 }
 .corevalues i {
   padding: 2rem 0;
+}
+
+@media screen and (max-width: 640px) {
+  .corevalues h1 {
+    font-size: 5rem;
+  }
 }
 
 /* FOOTER  */
@@ -397,8 +409,10 @@ ul {
   }
 
   .footer img {
-    width: 100%;
+    width: 50%;
+    text-align: center;
     height: fit-content;
+    margin: auto;
     margin-bottom: 3rem;
   }
 
