@@ -8,6 +8,8 @@
   --primary-color: #5e504a;
   --secondary-color: #8ea170;
   --white: #f5f6fb;
+  --fs-tablet: 5rem;
+  --fs-desktop: 6.5rem;
 }
 
 body {
@@ -78,6 +80,7 @@ ul {
 button {
   border-radius: 10px;
 }
+
 /* HEADER */
 .header-section {
   background-color: var(--white);
@@ -199,7 +202,7 @@ button {
 
 @media screen and (max-width: 1600px) {
   .header-carousel .header-wrapper h1 {
-    font-size: 6.5rem;
+    font-size: var(--fs-desktop);
   }
 }
 
@@ -208,7 +211,7 @@ button {
     display: block;
   }
   .header-carousel .header-wrapper h1 {
-    font-size: 5rem;
+    font-size: var(--fs-tablet);
   }
 }
 
@@ -465,6 +468,25 @@ button {
   background-color: var(--white);
 }
 
+/* WORKSHOP CLICKBAIT */
+.workshop-clickbait img {
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .workshop-clickbait .col:first-child {
+    padding: 4rem 0;
+  }
+
+  .workshop-clickbait .col:nth-child(2) {
+    display: none !important;
+  }
+
+  .workshop-clickbait .col h2 {
+    font-size: var(--fs-tablet);
+  }
+}
+
 /* MAPS / QUOTES */
 .maps {
   margin: 20vh 0;
@@ -606,7 +628,7 @@ button {
 
 @media screen and (max-width: 640px) {
   .corevalues h1 {
-    font-size: 5rem;
+    font-size: var(--fs-tablet);
   }
 }
 
