@@ -20,7 +20,7 @@ body {
 
 button {
   border: none;
-  transition: all ease-out 0.25s;
+  transition: all ease-out 0.1s;
 }
 
 button:hover {
@@ -242,6 +242,64 @@ button {
 /* about-section */
 .aboutus {
   color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+/* Card */
+.aboutus .swiper {
+  width: 480px;
+  height: 640px;
+}
+
+.aboutus .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutus .swiper-slide::after {
+  content: "";
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: linear-gradient(180deg, #00000060, #000000ec);
+}
+
+.aboutus .swiper-slide.swiper-slide-active::after {
+  content: "";
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: linear-gradient(180deg, #00000000, #00000000);
+}
+
+.aboutus .swiper-slide:nth-child(1n) {
+  background-image: url("img/DSCF0006.JPG");
+}
+
+.aboutus .swiper-slide:nth-child(2n) {
+  background-image: url("img/DSCF0485.JPG");
+}
+
+.aboutus .swiper-slide:nth-child(3n) {
+  background-image: url("img/workshop-anak-rame.JPG");
+}
+
+.aboutus .swiper-slide:nth-child(4n) {
+  background-image: url("img/workshop-anak-rame-2.JPG");
+}
+
+.aboutus .swiper-slide:nth-child(5n) {
+  background-image: url("img/DSCF4900.JPG");
 }
 
 .buttons {
@@ -261,6 +319,44 @@ button {
   height: 300px;
   border-radius: 2cap;
   margin: 1rem 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutus .swiper {
+    width: 360px;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutus .row h2 {
+    font-size: 4rem;
+  }
+
+  .aboutus .row p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus .swiper {
+    width: 480px;
+    height: 640px;
+  }
+
+  .aboutus .row {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .aboutus .row .col:first-child() {
+    margin-top: 3rem;
+  }
+
+  .aboutus .row p {
+    margin-bottom: 2rem;
+  }
 }
 /* CSS untuk membuat teks disembunyikan */
 /* CSS untuk membuat teks disembunyikan dengan tanda elipsis */
@@ -496,18 +592,12 @@ button {
 .testimoni {
   margin: auto auto;
   padding: 10rem 0;
-  background-color: var(--secondary-color);
-  background-image: url("img/image\ 14.svg");
   background-size: cover;
   background-position: center;
 }
 
-.testimoni h3 {
-  font-size: 2.5rem;
-}
-
 .testimoni h1 span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .testimoni .swiper-slide {
@@ -524,10 +614,30 @@ button {
 
 .testimoni .swiper-slide h3 {
   margin-bottom: 3rem;
+  color: var(--primary-color);
+  font-size: 2.5rem;
 }
 
 .testimoni .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+blockquote {
+  border-left: none;
+  margin: 0;
+}
+blockquote h3:before {
+  /* quotemarks */
+  content: "\201C";
+  color: var(--secondary-color);
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: 0.2;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  text-shadow: none;
+  z-index: -300;
 }
 
 @media screen and (max-width: 768px) {
