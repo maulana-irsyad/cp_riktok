@@ -145,7 +145,7 @@
     <!-- Swiper -->
     <section class="product">
       <div class="container">
-        <h2 class="belltm-bold px64 lh-1 text-center text-white mb-5">Our Latest <span>Product</span></h2>
+        <h1 class="belltm-bold px64 lh-1 text-center text-white mb-5">Our Latest <span>Product</span></h1>
         <div class="divider-wrapper"><div class="divider mb-5"></div></div>
         <div class="swiper mx-5">
           <!-- Additional required wrapper -->
@@ -289,11 +289,11 @@
         <div class="row flex-lg-row align-items-center justify-content-between">
           <div class="col col-xl-6 align-items-center">
             <div class="content align-items-center text-center">
-              <h2 class="belltm-bold px96 mb-3 lh-1">
+              <h2 class="belltm-bold px96 mb-4 lh-1">
                 Check Out Our <span>Workshop</span>
               </h2>
               <form action="workshop.html">
-                <button class="buttons bg-brown poppins-bold text-white">Lihat Selengkapnya</button>
+                <button class="buttons border-0 bg-brown poppins-bold text-white">Lihat Selengkapnya</button>
               </form>
             </div>
           </div>
@@ -305,13 +305,51 @@
         </div>
       </div>
     </section>
+    <section class="testimoni">
+      <div class="container">
+        <h1 class="belltm-bold px64 lh-1 text-center text-white mb-5">What They <span>Say</span></h1>
+        <div class="divider-wrapper"><div class="divider mb-5"></div></div>
+        <div class="swiper mx-5">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h3 class="belltm text-start text-white">"Tempat edukasi mewarnai yang sang at cocok buat anak anak. Tuan rumah sang at ramah dan baik, terima kasih banyak untuk jamuannya...Semoga semakin sukses Kriya Kayu Rik Rok..."</h3>
+              <h2 class="belltm-bold text-white text-end">~ david tarigan</h2>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="belltm text-start text-white">"Salah satu UMKM yang bergerak di bidang souvenir sejak tahun 1997 dan masih terus berkembang hingga sekarang. Beliau juga sering menjadi pembicara di berbagai acara. Ayo bersama-sama kita dukung untuk memajukan UMKM di Indonesia."</h3>
+              <h2 class="belltm-bold text-white text-end">~ Yovan Alvin Rivera (yop)</h2>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="belltm text-start text-white">"Tempatnya asik, dan edukatif juga.
+                Diedukasi bagaimana cara membuat souvenir handmade,,
+                Cocok banget untuk para pelajar atau rombongan yang ingin berkreasi, lokasinya juga mudah dicari,,
+                Ada tokonya juga, jadi bisa sekalian bawa oleh-oleh untuk teman di rumah,,"</h3>
+              <h2 class="belltm-bold text-white text-end">~ Adi putra</h2>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="belltm text-start text-white">"Di sinilah tempatnya untuk mencari pernak pernik lucu untuk sofenir. Mulai dari pensil gaul. Topeng, gantungan kunci dll. Tempat nya nyaman. Bersih, sejuk. Toilet bersih, musholla juga cukup memadai.
+                Rekomendasi pokonya."</h3>
+              <h2 class="belltm-bold text-white text-end">~ Sueji Yanto</h2>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="belltm text-start text-white">"Salah satu tempat tujuan wisata edukasi di area sekitar borobudur.
+                Kriya Kayu Rik Rok mengajarkan pengunjung untuk membuat berbagai macam cinderamata berbahan baku kayu.
+                Sangat menarik untuk mengajak anak anak kesini. Silakan dicoba, sangat berkesan dan murah meriah, serta tuan rumah yang sangat ramah."</h3>
+              <h2 class="belltm-bold text-white text-end">~ Falih Muhammad</h2>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <section class="maps">
       <div class="container text-center">
         <h2 class="belltm-bold px96">Where to <span>Find</span> Us?</h2>
         <p class="poppins-bold px24">You can find us at</p>
         <p class="poppins px24 italic">
-          Sumberwatu, Sambirejo, Kec. Prambanan, Kabupaten Sleman, Daerah
-          Istimewa Yogyakarta, Indonesia
+          Jalan Umbul Tirto No.1, Dusun Tingal Kulon, Wanurejo, Kabupaten Magelang, Jawa Tengah
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909.162383517451!2d110.20335834451136!3d-7.620465069579772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8c93db92d20d%3A0xaa29edfb8b168346!2sKriya%20Kayu%20Rik%20Rok!5e0!3m2!1sid!2sid!4v1708577526908!5m2!1sid!2sid"
@@ -406,6 +444,21 @@
             slidesPerView: 3,
             spaceBetween: 20,
           },
+        },
+      });
+
+      const swiper2 = new Swiper(".testimoni .swiper", {
+        // Optional parameters
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 10,
+        // Navigation arrows
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
       });
     </script>

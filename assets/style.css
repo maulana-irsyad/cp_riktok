@@ -18,19 +18,24 @@ body {
   min-width: 100vw;
 }
 
+button {
+  border: none;
+  transition: all ease-out 0.25s;
+}
+
+button:hover {
+  background-color: #816c64;
+}
+
 /* font  */
 .belltm-bold {
   color: var(--primary-color);
   font-family: "Bell MT", serif;
-  font-weight: bold; /* Mengatur ketebalan font menjadi bold */
-  /* text-align: center; */
-  /* font-size: 96px; */
+  font-weight: bold;
 }
 .belltm {
-  /* color: var(--white); */
   font-family: "Bell MT", serif;
   text-align: center;
-  /* font-size: 96px; */
 }
 span {
   color: var(--secondary-color);
@@ -442,7 +447,7 @@ button {
   width: 100%;
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
+.product .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--secondary-color);
 }
 
@@ -487,9 +492,53 @@ button {
   }
 }
 
+/* TESTIMONI */
+.testimoni {
+  margin: auto auto;
+  padding: 10rem 0;
+  background-color: var(--secondary-color);
+  background-image: url("img/image\ 14.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.testimoni h3 {
+  font-size: 2.5rem;
+}
+
+.testimoni h1 span {
+  color: var(--primary-color);
+}
+
+.testimoni .swiper-slide {
+  margin-bottom: 3rem;
+}
+
+.testimoni .swiper-slide:hover {
+  cursor: grab;
+}
+
+.testimoni .swiper-slide:active {
+  cursor: grabbing;
+}
+
+.testimoni .swiper-slide h3 {
+  margin-bottom: 3rem;
+}
+
+.testimoni .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .testimoni h3 {
+    font-size: 2rem;
+  }
+}
+
 /* MAPS / QUOTES */
 .maps {
-  margin: 20vh 0;
+  margin: 10rem 0;
 }
 
 .maps h1 {
