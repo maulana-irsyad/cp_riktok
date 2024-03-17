@@ -7,6 +7,7 @@
 :root {
   --primary-color: #5e504a;
   --secondary-color: #8ea170;
+  --yellow: #ffd567;
   --white: #f5f6fb;
   --fs-tablet: 5rem;
   --fs-desktop: 6.5rem;
@@ -101,6 +102,18 @@ button {
 
 .logo img {
   height: 5rem;
+}
+
+.divider-wrapper {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  width: 150px;
+  height: 10px;
+  background-color: var(--white);
 }
 
 /* NAVBAR */
@@ -557,18 +570,6 @@ button {
   }
 }
 
-.divider-wrapper {
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.divider {
-  width: 150px;
-  height: 10px;
-  background-color: var(--white);
-}
-
 /* WORKSHOP CLICKBAIT */
 .workshop-clickbait img {
   margin: 0;
@@ -638,6 +639,10 @@ blockquote h3:before {
   left: 0;
   text-shadow: none;
   z-index: -300;
+}
+
+.testimoni .divider {
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
