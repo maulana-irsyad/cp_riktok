@@ -1,20 +1,24 @@
 (function () {
-  'use strict';
+  "use strict";
 
   // A class for building sliders from it
   class Slider {
     constructor(id, mediaQueries) {
       // Get HTML elements
       this.slider = document.querySelector(`#${id}`);
-      this.sliderList = this.slider.querySelector('.slider-list');
-      this.sliderItems = this.slider.querySelectorAll('.slider-item');
-      this.sliderNext = this.slider.querySelector('.slider-arrow-next');
-      this.sliderPrev = this.slider.querySelector('.slider-arrow-prev');
+      this.sliderList = this.slider.querySelector(".slider-list");
+      this.sliderItems = this.slider.querySelectorAll(".slider-item");
+      this.sliderNext = this.slider.querySelector(".slider-arrow-next");
+      this.sliderPrev = this.slider.querySelector(".slider-arrow-prev");
 
       // Get media queries
-      this.mediaQueryList = [window.matchMedia(`screen and (max-width:${mediaQueries[0] - 1}px)`)];
+      this.mediaQueryList = [
+        window.matchMedia(`screen and (max-width:${mediaQueries[0] - 1}px)`),
+      ];
       mediaQueries.forEach((mediaQuery) => {
-        this.mediaQueryList.push(window.matchMedia(`screen and (min-width:${mediaQuery}px)`));
+        this.mediaQueryList.push(
+          window.matchMedia(`screen and (min-width:${mediaQuery}px)`)
+        );
       });
 
       // Define global variables
@@ -25,21 +29,24 @@
 
       // Add event listener: to call the run function again when screen resized
       this.mediaQueryList.forEach((mediaQuery) => {
-        mediaQuery.addEventListener('change', () => {
+        mediaQuery.addEventListener("change", () => {
           this.run();
         });
       });
 
       // Add event listener: to go to next slide
-      this.sliderNext.addEventListener('click', () => {
-        if (this.currentItemIndex < this.sliderItemsLength - this.numberOfVisibleItems) {
+      this.sliderNext.addEventListener("click", () => {
+        if (
+          this.currentItemIndex <
+          this.sliderItemsLength - this.numberOfVisibleItems
+        ) {
           this.currentItemIndex++;
           this.shiftSlides();
         }
       });
 
       // Add event listener: to go to previous slide
-      this.sliderPrev.addEventListener('click', () => {
+      this.sliderPrev.addEventListener("click", () => {
         if (this.currentItemIndex > 0) {
           this.currentItemIndex--;
           this.shiftSlides();
@@ -48,9 +55,9 @@
 
       // Disable focus on all slides links
       this.sliderItems.forEach((item) => {
-        const elements = item.querySelectorAll('a');
+        const elements = item.querySelectorAll("a");
         elements.forEach((element) => {
-          element.tabIndex = '-1';
+          element.tabIndex = "-1";
         });
       });
 
@@ -75,10 +82,12 @@
 
           // Reset the slider
           this.currentItemIndex = 0;
-          this.sliderList.style.transform = 'translateX(0%)';
+          this.sliderList.style.transform = "translateX(0%)";
 
           // Set slider list width
-          this.sliderList.style.width = `calc(${(100 / this.numberOfVisibleItems) * this.sliderItemsLength}% + ${(this.sliderItemsLength / this.numberOfVisibleItems) * 16}px)`;
+          this.sliderList.style.width = `calc(${
+            (100 / this.numberOfVisibleItems) * this.sliderItemsLength
+          }% + ${(this.sliderItemsLength / this.numberOfVisibleItems) * 16}px)`;
 
           // Set slides width
           this.sliderItems.forEach((item) => {
@@ -94,7 +103,9 @@
 
     // A function to shift slides left and right
     shiftSlides() {
-      this.sliderList.style.transform = `translateX(-${(100 / this.sliderItemsLength) * this.currentItemIndex}%)`;
+      this.sliderList.style.transform = `translateX(-${
+        (100 / this.sliderItemsLength) * this.currentItemIndex
+      }%)`;
     }
   }
 
@@ -105,8 +116,8 @@
   */
 
   // Create a new slider and run it
-  new Slider('new-products', [576, 992]).run();
+  new Slider("new-products", [576, 992]).run();
 
   // Create a new slider and run it
-  new Slider('featured-products', [576, 768, 992]).run();
+  new Slider("featured-products", [576, 768, 992]).run();
 })();

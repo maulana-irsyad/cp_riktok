@@ -185,7 +185,7 @@ button {
   font-family: "Bell MT", serif;
   font-weight: bold; /* Mengatur ketebalan font menjadi bold */
   text-align: center;
-  font-size: 128px;
+  font-size: 128px; /* Mobile First */
 }
 
 .header-carousel span {
@@ -197,9 +197,18 @@ button {
   max-height: 10%;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 1600px) {
+  .header-carousel .header-wrapper h1 {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .header-carousel .header-wrapper img {
     display: block;
+  }
+  .header-carousel .header-wrapper h1 {
+    font-size: 5rem;
   }
 }
 
@@ -226,11 +235,13 @@ button {
 .aboutus {
   color: var(--primary-color);
 }
+
 .buttons {
   border-radius: 2rem;
   width: 20rem;
   padding: 1rem 0rem;
 }
+
 .aboutus span {
   color: var(--secondary-color);
 }
@@ -260,23 +271,27 @@ button {
 
 /* WORKSHOP CLICKBAIT */
 .workshop-clickbait {
-  padding: 5rem 0;
   color: var(--primary-color);
 }
+
 .buttons {
   border-radius: 2rem;
   width: 20rem;
   padding: 1rem 0rem;
 }
+
 .workshop-clickbait span {
   color: var(--secondary-color);
 }
+
 .images-list {
   display: flex;
   flex-direction: column;
 }
 .workshop-clickbait img {
-  max-width: 500px;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 @media (max-width: 765px) {
   .workshop-clickbait img {
@@ -328,6 +343,7 @@ button {
   max-height: calc(100vh - 80px);
   /* width: calc(100% -50%); */
 }
+
 .verticalslider-list {
   list-style-type: none;
   margin: 0;
@@ -348,12 +364,8 @@ button {
   /* width: 50%; */
 }
 .verticalslider-item {
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
   height: auto;
-}
-
-.slider-item img {
-  /* width: 50%; */
 }
 
 .slider-arrows {
@@ -377,6 +389,7 @@ button {
   border-radius: 2rem;
   cursor: pointer;
 }
+
 .verticalslider-arrow-prev,
 .verticalslider-arrow-next {
   padding: 0.5rem 1rem;
@@ -394,12 +407,62 @@ button {
 .verticalslider-arrow-prev:hover {
   background-color: #eeeeee;
 }
+
 .product {
-  margin: 2rem 0;
-  padding: 5rem 0;
+  padding: 10rem 0;
   background-color: rgb(101, 86, 80);
   background-image: url("img/image\ 14.svg");
-  background-size: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product .card {
+  height: 500px;
+  margin-bottom: 3rem;
+}
+
+.product .card:hover {
+  cursor: grab;
+}
+
+.product .card:active {
+  cursor: grabbing;
+}
+
+.product .card-body {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.product .card img {
+  width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .product .card {
+    height: 100%;
+  }
+
+  .product .card-body {
+    padding: 3rem 1rem;
+  }
+}
+
+.divider-wrapper {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  width: 150px;
+  height: 10px;
+  background-color: var(--white);
 }
 
 /* MAPS / QUOTES */
@@ -511,24 +574,26 @@ button {
 .corevalues {
   background-color: #8ea170;
   color: var(--white);
-  padding: 5rem 0;
+  padding: 5rem 10%;
 }
 
-.corevalues h2 {
+.corevalues h2,
+.corevalues h1 {
   color: var(--white);
 }
 
-.workshop-details-page .corevalues {
-  background-color: var(--white);
+.corevalues h1 span {
   color: var(--primary-color);
 }
 
-.workshop-details-page .corevalues h2 {
-  color: var(--secondary-color);
+.corevalues .container-fluid .row .corevalues-item {
+  max-width: 300px !important;
+  border-radius: 2rem;
+  transition: all ease-out 0.1s;
 }
 
-.corevalues .row .col-12 {
-  width: 300px;
+.corevalues .container-fluid .row .corevalues-item:hover {
+  background-color: #f5f6fb2d;
 }
 
 .corevalues span {
