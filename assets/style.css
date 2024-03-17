@@ -206,7 +206,7 @@ button {
   font-family: "Bell MT", serif;
   font-weight: bold; /* Mengatur ketebalan font menjadi bold */
   text-align: center;
-  font-size: 128px; /* Mobile First */
+  font-size: 96px; /* Mobile First */
 }
 
 .header-carousel span {
