@@ -257,6 +257,13 @@ button {
   height: 100vh;
   background-image: linear-gradient(180deg, #00000069, #000000c5);
 }
+.carousel-indicatorss li{
+  background-image:  linear-gradient(180deg, #8ea170, #000000c5),url('img/ellpise.svg');
+  background-size: cover;
+  /* width: 20rem!important; */
+  height: 10px!important;
+  /* border-radius: 1rem!important; */
+}
 .carousel img{
   width: 100%;
 }
@@ -265,6 +272,9 @@ button {
   background-size: cover ;
   background-position: center center;
 
+}
+.carousel-control-prev-icon{
+  
 }
 /* .carousel {
   display: flex;
