@@ -758,18 +758,20 @@ blockquote h3:before {
 
 /* COREVALUES */
 .corevalues {
-  background-color: #8ea170;
+  background-color: var(--white);
   color: var(--white);
   padding: 5rem 10%;
 }
 
 .corevalues h2,
-.corevalues h1 {
-  color: var(--white);
+.corevalues h1,
+.corevalues i,
+.corevalues p {
+  color: var(--primary-color);
 }
 
 .corevalues h1 span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .corevalues .container-fluid .row .corevalues-item {
@@ -911,8 +913,39 @@ blockquote h3:before {
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
-  }
-  
-  .fab-icon {
+}
+
+.fab-icon {
   margin-top: 16px;
+}
+
+/* Gallery */
+#lightgallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#lightgallery a {
+  padding: 0.5rem;
+}
+
+#lightgallery img {
+  width: 100%;
+  transition: all ease-out 0.15s;
+}
+
+#lightgallery a:hover img {
+  transform: translateY(-0.5rem);
+}
+
+@media screen and (max-width: 900px) {
+  #lightgallery {
+    grid-template-columns: auto auto;
   }
+}
+
+@media screen and (max-width: 640px) {
+  #lightgallery {
+    grid-template-columns: auto;
+  }
+}
