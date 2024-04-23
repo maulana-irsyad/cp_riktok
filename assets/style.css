@@ -872,6 +872,9 @@ blockquote h3:before {
   .content h2:first-child {
     font-size: 48px;
   }
+  .maps h2:first-child {
+    font-size: 48px;
+  }
 }
 
 /* COREVALUES */
