@@ -196,7 +196,7 @@ button {
 
 .header-carousel .header-wrapper img {
   height: 6rem;
-  width: fit-content;
+  width: auto;
   display: none;
 }
 
@@ -316,7 +316,7 @@ button {
 } */
 .carousel .header-wrapper img {
   height: 6rem;
-  width: fit-content;
+  width: auto;
   display: none;
 }
 
@@ -992,9 +992,9 @@ blockquote h3:before {
 
   .footer img {
     width: 50%;
-    height: 5rem;
+    /* height: 5rem; */
     text-align: center;
-    /* height: fit-content; */
+    height: auto;
     margin: auto;
     margin-bottom: 3rem;
   }
